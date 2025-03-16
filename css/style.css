@@ -96,12 +96,29 @@
     opacity: 0.3; 
     /* Para que la imagen sea mas transparente y el texto sobre ella se pueda leer */
   }
-
+  .opciones_contacto img{
+    width: 50px;
+    height: 50px;
+  }
   .gallery_bloque img{
     width: 100%;
     border-radius: 6px; 
     height: auto;
   }
+
+  .imagen_planta{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagen_planta img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
 
 /* Estilo main */
   main {
@@ -155,6 +172,85 @@
 }
 .gallery_bloque:hover img{
   opacity: 0;
+}
+
+/* Estilos "contacto.html" */
+.bloque_contacto{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color:white;
+  gap: 40px;
+  padding: 15px;
+}
+.boton{
+  background-color: white;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+.boton:hover{
+  background-color:green;
+}
+.formulario{
+  box-shadow: 4px 7px 45px -10px rgba(0,0,0,0.4);
+  background-color: lightgray;
+  color: black;
+  outline-style:double;
+  width:100%;
+  flex:1;
+}
+
+.menu_contacto{
+  width: 20%;
+  background-color: green;
+  color: white;
+  padding: 20%;
+  flex: 0 0 20%;
+  height: fit-content;
+}
+
+.opciones_contacto{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Estilo ventana : "plantas.html" */
+.plantas_info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.planta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  width: 75%;
+  overflow:hidden;
+  box-shadow: 4px 7px 45px -10px rgba(0,0,0,0.4);
+  margin: 20px;
+}
+
+.planta:hover{
+  box-shadow: 4px 7px 45px -10px black;
+}
+
+.texto_planta{
+  width: 50%;
 }
 
 /* Estilos compartidos */

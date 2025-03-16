@@ -27,45 +27,42 @@
             </header>
         </div>
       
-        <!-- Contenido pág. Principal -->
-        <main>
+        <!-- Contenido pág. Contácto-->
+<main>
             <h1>Contáctanos</h1>
 
-            <p>Para todas tus solicitudes de cotización, consultas o cualquier pregunta, no dudes en contactar con RPK Group. 
+            <p class = "subtitulo">Para todas tus solicitudes de cotización, consultas o cualquier pregunta, no dudes en contactar con RPK Group. 
                 Estamos aquí para ayudarte con todo lo que necesites.</p>
-        
+
+<div class = "bloque_contacto">
+        <div class="formulario">
         <form>
-        
+                <br>
                 <label for="campo-nombre">Nombre:</label>
                 <input id="campo-nombre" type="text" name="nombre">
                 <br><br>
                 <label for="campo-apellidos">Apellidos:</label>
                 <input id="campo-apellidos" type="text" name="apellidos">
                 <br><br>
-                <label for="campo-nc">Compañía</label>
-                <input id="campo-nc" type="text" name="nc">
-                <br><br>
                 <label for="campo-email">Email</label>
                 <input id="campo-email" type="email" name="email">
                 <br><br>
                 <label for="campo-puesto">Puesto</label>
                 <input id="campo-puesto" type="puesto" name="puesto">
-        
+                <br><br>
+
                 <p>¿Has trabajado antes con nosotros?</p>
-        
                 <input type="radio"  name="opcion" value="si"> Si 
-                <input type="radio"  name="opcion" value="no"> No <br>
-                <br>
+                <input type="radio"  name="opcion" value="no"> No 
+                <br><br>
                 <label for="campo-email">Email de contacto:</label>
                 <input id="campo-email" type="email" name="email">
-                <br>
+                <br><br>
         
-                <legend>Datos de su empresa</legend>
-        
-                <p>Nombre comercial</p>
-        
-                <label for="campo-nc"></label>
-                <input id="campo-nc" type="nombre" name="">
+                <legend class = "subtitulo">Datos de su empresa</legend>
+                <br><br>
+                <label for="campo-nc">Nombre comercial:</label>
+                <input id="campo-nc" type="text" name="nc">
         
                 <br><br>
         
@@ -76,22 +73,35 @@
                     <option value="mayor de 25 y >65">Europa</option>
                     <option value="mayor de 65">Otro</option> 
                      </select> <br>
-        
                 <br>
-                <br>
-        
-                <textarea name="textarea" rows="15" cols="60">Su consulta:</textarea>
+
+                <p class = "subtitulo">Realice su consulta</p><br>
+                <textarea name="textarea" rows="15" cols="60"></textarea>
             <br>
             
             <input type="checkbox" name="aceptar" value="1"> Acepto las condiciones
             <br>
             <br>
-            <input type="submit" value="ENVIAR">
-        
-        
-        
-        </main>
-      
+            <input type="submit" value="ENVIAR" class="boton">
+            <br><br>
+        </form>
+    </div>
+
+            <!-- Menú lateral -->
+            <aside class = "menu_contacto">
+                <h2>Otras formas de contácto:</h2>
+            <div class= "opciones_contacto">
+                <a href = "https://www.linkedin.com/company/rpk-group/" target = "_blank">
+                    <img src = "images/linkedin.png" alt = "LinkedIn">
+                </a>
+                <a href = "https://x.com/RpkCoop" target = "_blank">
+                    <img src = "images/twitter.png" alt = "Twitter">
+                </a>
+            </div>
+            </aside>
+</div>
+</main>
+
         <!-- Footer -->
         <footer>
           <p> RPK Global © 2025</p>
