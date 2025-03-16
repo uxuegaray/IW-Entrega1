@@ -1,22 +1,20 @@
 /* Estilo general/body */
   body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 1px;
-    padding: 1px;
+    margin: 5px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     background-color: lightgray;
     min-height: 100vh;
   }
 
-/* Estilo  */
-
+/*  */
   /* Estructura fija */
   .navegacion{
     font-size: 16px;
     font-weight: bold;
     padding: 0 1em;
-    font-weight: bold;
     color:black;
   }
   /* Enlaces estructura fija */
@@ -37,11 +35,8 @@
       align-items: center;
       background-color:white;
       padding: 15px;
-      }
-
-    /* Efecto difuminado al header */
-      header::after{
-        
+      /* Efecto difuminado al header */
+      box-shadow: 4px 7px 45px -10px rgba(0,0,0,0.4);
       }
 
   /* Footer  */
@@ -92,10 +87,20 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
   }
   .imagen_principal img{
     max-width: 75%;
-    border-radius: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.3; 
+    /* Para que la imagen sea mas transparente y el texto sobre ella se pueda leer */
+  }
+
+  .gallery_bloque img{
+    width: 100%;
+    border-radius: 6px; 
+    height: auto;
   }
 
 /* Estilo main */
@@ -103,5 +108,63 @@
     flex: 1;
     text-align: center;
   }
+
+
+/* Estilos "principal.html" */
+.recuadro_inicio {
+  font-weight:bolder;
+  color:black;
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* Estilos "producto.html" */
+.gallery{
+  justify-items: center;
+}
+.gallery_bloque {
+  display:flex;
+  width: 50%;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery_texto {
+  position:absolute;
+  width: 100%;
+  height:100%;
+  display:flex;
+  opacity: 0;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  background-color: green;
+  font-size: 20px;
+}
+.gallery_bloque:hover .gallery_texto{
+  opacity: 1;
+}
+.gallery_bloque:hover img{
+  opacity: 0;
+}
+
+/* Estilos compartidos */
+.parrafo{
+  font-size: 20px;
+}
+.subtitulo{
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 
