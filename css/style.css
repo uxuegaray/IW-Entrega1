@@ -1,0 +1,107 @@
+/* Estilo general/body */
+  body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    min-height: 100vh;
+  }
+
+/* Estilo  */
+
+  /* Estructura fija */
+  .navegacion{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 1em;
+    font-weight: bold;
+    color:black;
+  }
+  /* Enlaces estructura fija */
+  .navegacion a{
+    color: black; 
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: green;
+  }
+  
+  /* Header */
+    header {
+      border-bottom: 6px solid green;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:white;
+      padding: 15px;
+      }
+
+    /* Efecto difuminado al header */
+      header::after{
+        
+      }
+
+  /* Footer  */
+    footer{
+      background-color: green;
+      color:white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+  /* Listas menú */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    }
+    
+  nav li {
+    display: inline;
+    }
+
+  /* Estilo botón contacto */
+  .contacto a {
+    border: 20px solid transparent;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .contacto a:hover { 
+    /* Para que aparezca el cuadrado al querer seleccionar contacto */
+    border: 20px solid green;
+    background-color: green;
+    border-radius: 20px;
+  }
+
+/* Estilo imágenes */
+  .logo img {
+    height: 75px;
+    }
+  .contacto img {
+    height: 75px;
+  }
+  .imagen_principal{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imagen_principal img{
+    max-width: 75%;
+    border-radius: 10px;
+  }
+
+/* Estilo main */
+  main {
+    flex: 1;
+    text-align: center;
+  }
+
+
