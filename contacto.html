@@ -1,111 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Estructura cabecera-->
-    <div class = "navegacion">
-        <!-- Navegación entre páginas-->
-          <header>
-              <a href="" class="logo"><img src="images/logo.png" alt="logo"/></a>
-              <nav>
-                <ul>
-                  <li><a href="principal.html">INICIO</a></li>
-                  <li><a href="producto.html">PRODUCTO</a></li>
-                  <li><a href="plantas.html">PLANTAS</a></li>
-                </ul>
-              </nav>
-              <div class="contacto">
-                  <a href="contacto.html">
-                    <img src = "images/contacto.png">
-                  </a>
-                </div>
-            </header>
-        </div>
-      
-        <!-- Contenido pág. Contácto-->
-<main>
-            <h1>Contáctanos</h1>
-
-            <p class = "subtitulo">Para todas tus solicitudes de cotización, consultas o cualquier pregunta, no dudes en contactar con RPK Group. 
-                Estamos aquí para ayudarte con todo lo que necesites.</p>
-
-<div class = "bloque_contacto">
-        <div class="formulario">
-        <form>
-                <br>
-                <label for="campo-nombre">Nombre:</label>
-                <input id="campo-nombre" type="text" name="nombre">
-                <br><br>
-                <label for="campo-apellidos">Apellidos:</label>
-                <input id="campo-apellidos" type="text" name="apellidos">
-                <br><br>
-                <label for="campo-email">Email</label>
-                <input id="campo-email" type="email" name="email">
-                <br><br>
-                <label for="campo-puesto">Puesto</label>
-                <input id="campo-puesto" type="puesto" name="puesto">
-                <br><br>
-
-                <p>¿Has trabajado antes con nosotros?</p>
-                <input type="radio"  name="opcion" value="si"> Si 
-                <input type="radio"  name="opcion" value="no"> No 
-                <br><br>
-                <label for="campo-email">Email de contacto:</label>
-                <input id="campo-email" type="email" name="email">
-                <br><br>
-        
-                <legend class = "subtitulo">Datos de su empresa</legend>
-                <br><br>
-                <label for="campo-nc">Nombre comercial:</label>
-                <input id="campo-nc" type="text" name="nc">
-        
-                <br><br>
-        
-                <label for="campo-select">Localización</label>
-                <select id="campo select" name="edad" > 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de contacto</title>
+	<link rel="stylesheet" href="css/style.css"> </head>
+<div class="contenedor_contacto">
+	<body>
+		<!-- Estructura cabecera-->
+		<div class="navegacion">
+			<!-- Navegación entre páginas-->
+			<header>
+				<a href="" class="logo"><img src="images/logo.png" alt="logo" /></a>
+				<nav>
+					<ul>
+						<li><a href="principal.html">INICIO</a></li>
+						<li><a href="producto.html">PRODUCTO</a></li>
+						<li><a href="plantas.html">PLANTAS</a></li>
+					</ul>
+				</nav>
+				<div class="contacto">
+					<a href="contacto.html"> <img src="images/contacto.png"> </a>
+				</div>
+			</header>
+		</div>
+		<!-- Contenido pág. Contácto-->
+		<main>
+			<h1>Contáctanos</h1>
+			<p class="subtitulo">Para todas tus solicitudes de cotización, consultas o cualquier pregunta, no dudes en contactar con RPK Group. Estamos aquí para ayudarte con todo lo que necesites.</p>
+			<div class="formulario">
+				<form>
+					<div class="campo_formulario"> <label for="campo-nombre">Nombre:</label> 
+                        <input id="campo-nombre" type="text" name="nombre"> 
+                    </div>
+					<div class="campo_formulario"> <label for="campo-apellidos">Apellidos:</label> 
+                        <input id="campo-apellidos" type="text" name="apellidos"> 
+                    </div>
+					<div class="campo_formulario"> <label for="campo-email">Email</label> 
+                        <input id="campo-email" type="email" name="email"> 
+                    </div>
+					<div class="campo_formulario"> <label for="campo-puesto">Puesto</label> 
+                        <input id="campo-puesto" type="puesto" name="puesto"> 
+                    </div>
+					<div class="campo_formulario">
+						<p>¿Has trabajado antes con nosotros?</p> 
+                        <input type="radio" name="opcion" value="si"> Si 
+                        <input type="radio" name="opcion" value="no"> No 
+                    </div>
+					<div class="campo_formulario"> <label for="campo-email">Email de contacto:</label> 
+                        <input id="campo-email" type="email" name="email"> 
+                    </div>
+					<legend class="subtitulo">Datos de su empresa</legend>
+					<div class="campo_formulario"> <label for="campo-nc">Nombre comercial:</label> 
+                        <input id="campo-nc" type="text" name="nc"> 
+                    </div> 
+                    <label for="campo-select">Localización</label>
+					<div class="campo_formulario"> <select id="campo select" name="edad"> 
                     <option value=">18">Euskadi</option>
                     <option value="mayor de 18 >25">España</option>
                     <option value="mayor de 25 y >65">Europa</option>
                     <option value="mayor de 65">Otro</option> 
-                     </select> <br>
-                <br>
-
-                <p class = "subtitulo">Realice su consulta</p><br>
-                <textarea name="textarea" rows="15" cols="60"></textarea>
-            <br>
-            
-            <input type="checkbox" name="aceptar" value="1"> Acepto las condiciones
-            <br>
-            <br>
-            <input type="submit" value="ENVIAR" class="boton">
-            <br><br>
-        </form>
-    </div>
-
-            <!-- Menú lateral -->
-            <aside class = "menu_contacto">
-                <h2>Otras formas de contácto:</h2>
-            <div class= "opciones_contacto">
-                <a href = "https://www.linkedin.com/company/rpk-group/" target = "_blank">
-                    <img src = "images/linkedin.png" alt = "LinkedIn">
-                </a>
-                <a href = "https://x.com/RpkCoop" target = "_blank">
-                    <img src = "images/twitter.png" alt = "Twitter">
-                </a>
-            </div>
-            </aside>
+                     </select> 
+                    </div>
+					<p class="subtitulo">Realice su consulta</p> 
+                    <textarea name="textarea" rows="15" cols="60"></textarea>
+					<div class="campo_formulario"> <input type="checkbox" name="aceptar" value="1"> Acepto las condiciones
+                        <input type="submit" value="ENVIAR" class="boton"> 
+                    </div>
+				</form>
+			</div>
+			<!-- Menú lateral -->
+			<aside class="menu_contacto">
+				<h2>Otras formas de contácto:</h2>
+				<div class="opciones_contacto">
+					<a href="https://www.linkedin.com/company/rpk-group/" target="_blank"> <img src="images/linkedin.png" alt="LinkedIn"> </a>
+					<a href="https://x.com/RpkCoop" target="_blank"> <img src="images/twitter.png" alt="Twitter"> </a>
+				</div>
+			</aside>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<p> RPK Global © 2025</p>
+		</footer>
+	</body>
 </div>
-</main>
-
-        <!-- Footer -->
-        <footer>
-          <p> RPK Global © 2025</p>
-      </footer>
-        
-</body>
 </html>
