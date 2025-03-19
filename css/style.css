@@ -1,11 +1,9 @@
 /* PARTE GENERAL */
 
-
 /* Estilos compartidos por toda la página */
 
 body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	margin: 5px;
 	padding: 5px;
 	display: flex;
 	flex-direction: column;
@@ -13,13 +11,10 @@ body {
 	min-height: 100vh;
 }
 
-/* Main: Será el bloque de contenido que variará por página */
-
 main {
 	flex: 1;
 	text-align: center;
 }
-image {}
 
 /* Estilos de Enlaces */
 
@@ -44,8 +39,16 @@ a:hover {
 }
 .titulo {
 	font-style: italic;
-	font-stretch: wider;
-	font-size: 45px;
+	font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px; 
+  /* Espacio entre las letras del texto */
+  text-align: center;
+  color: white;
+  background-color: green;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 /* Estilos de tablas (principal.html) */
@@ -80,7 +83,7 @@ header {
 	box-shadow: 4px 7px 45px -10px rgba(0, 0, 0, 0.4);
 }
 .navegacion {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: bold;
 	padding: 0 1em;
 	color: black;
@@ -103,7 +106,6 @@ nav li {
 .contenido_principal {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
 	margin: 20px;
 	align-items: stretch;
 	flex-direction: row;
@@ -139,13 +141,12 @@ footer {
 /* PARTE ESTILOS ESPECÍFICOS POR PANTALLA */
 
 
-/* Estilo ventana : "plantas.html" */
+/* "plantas.html" */
 
 .plantas_info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 40px;
 	margin-top: 15px;
 }
 .planta {
@@ -167,7 +168,7 @@ footer {
 	width: 50%;
 }
 
-/* Estilos "contacto.html" */
+/*"contacto.html" */
 
 
 /* Estilo boton envio */
@@ -192,9 +193,8 @@ footer {
 	background-color: lightgray;
 	outline-style: double;
 	width: 75%;
-	margin-left: 200px;
+	margin-left: 125px;
 	margin-bottom: 50px;
-	flex: 2;
 }
 .campo_formulario {
 	padding: 20px
@@ -214,7 +214,7 @@ footer {
 	border-radius: 20px;
 }
 
-/* Estilos "producto.html" */
+/* "producto.html" */
 
 .gallery {
 	justify-items: center;
@@ -223,10 +223,8 @@ footer {
 	display: flex;
 	width: 50%;
 	border-radius: 6px;
-	overflow: hidden;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
 	position: relative;
 	margin-bottom: 50px;
 }
@@ -251,7 +249,7 @@ footer {
 	opacity: 0;
 }
 
-/* Estilos "principal.html" */
+/*"principal.html" */
 
 .recuadro_inicio {
 	font-weight: bolder;
@@ -277,8 +275,6 @@ footer {
 .contacto img {
 	height: 75px;
 }
-
-/* Imagenes aside */
 
 .opciones_contacto {
 	display: flex;
@@ -327,4 +323,129 @@ video {
 }
 
 /* PARTE ACCESIBILIDAD*/
+
+/* Dispositivos con una anchura de 480px o menos, como teléfonos móviles*/
+@media only screen and (max-width: 480px){
+
+  /* Tamaños de letra */
+  body{
+    font-size: 14px;
+  }
+  .parrafo {
+    font-size: 14px;
+  }
+  .subtitulo {
+    font-size: 16px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+
+  /* Estilo header : muestra los elementos en columna */
+  .navegacion {
+    font-size: 13px;
+  }
+  header {
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+  }
+  .navegacion nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Contenido principal en columna */
+  .contenido_principal {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  /* Desaparece Aside */
+  .info_empresa {
+    display: none;
+  }
+
+  /* Imágenes en una sola columna */
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery_bloque {
+    width: 90%;
+  }
+
+  /* Footer pequeño */
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
+  
+}
+
+/* Dispositivos con una anchura entre 481px y 768px, móviles o tablets */
+@media only screen and (min-width:481px) and (max-width: 768px) {
+
+  /* Tamaños de letra */
+  body{
+    font-size: 14px;
+  }
+  .parrafo {
+    font-size: 14px;
+  }
+  .subtitulo {
+    font-size: 16px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+
+  /* Estilo header : muestra los elementos en columna */
+  .navegacion {
+    font-size: 13px;
+  }
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  .navegacion nav ul {
+    flex-direction: column;
+    gap: 13px;
+  }
+  /* Contenido principal en columna */
+  .contenido_principal {
+    flex-direction: column;
+    align-items: center;
+    margin: 14px;
+  }
+
+  /* Ajuste del Aside */
+  .info_empresa {
+    width: 80%;
+    margin-top: 20px;
+    border-left: none;
+    border-top: 4px solid green;
+  }
+
+  /* Imágenes en una sola columna */
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery_bloque {
+    width: 90%;
+  }
+
+}
+
+/* Dispositivos con una anchura entre 769px y 1279px, como móviles en apaisado o portátiles */
+@media only screen and (min-width: 769px) and (max-width:1279px) {
+
+  .navegacion {
+    font-size: 13px;
+  }
+}
+
 

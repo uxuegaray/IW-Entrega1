@@ -8,10 +8,10 @@
 
 	<body>
 		<!-- Estructura cabecera-->
-		<div class="navegacion">
+
 			<!-- Navegación entre páginas-->
-			<header>
-				<a href="" class="logo"><img src="images/logo.png" alt="logo" /></a>
+			<header class="navegacion">
+				<a href="principal.html" class="logo"><img src="images/logo.png" alt="logo" /></a>
 				<nav>
 					<ul>
 						<li><a href="principal.html">INICIO</a></li>
@@ -23,13 +23,13 @@
 					<a href="contacto.html"> <img src="images/contacto.png"alt="contacto" ></a>
 				</div>
 			</header>
-		</div>
+
 		<!-- Contenido pág. Contácto-->
-		<div class="contenido_principal">
+		<section class="contenido_principal">
 		<main>
 			<h1>Contáctanos</h1>
 			<p class="parrafo">Para todas tus solicitudes de cotización, consultas o cualquier pregunta, no dudes en contactar con RPK Group. Estamos aquí para ayudarte con todo lo que necesites.</p>
-			<!--  -->
+			<!-- Formulario -->
 			<div class="formulario">
 				<form>
 					<div class="campo_formulario"> <label for="campo-nombre">Nombre:</label> 
@@ -42,7 +42,7 @@
                         <input id="campo-email" type="email" name="email"> 
                     </div>
 					<div class="campo_formulario"> <label for="campo-puesto">Puesto</label> 
-                        <input id="campo-puesto" type="puesto" name="puesto"> 
+                        <input id="campo-puesto" type="text" name="puesto"> 
                     </div>
 					<div class="campo_formulario">
 						<p>¿Has trabajado antes con nosotros?</p> 
@@ -50,14 +50,14 @@
                         <input type="radio" name="opcion" value="no"> No 
                     </div>
 					<div class="campo_formulario"> <label for="campo-email">Email de contacto:</label> 
-                        <input id="campo-email" type="email" name="email"> 
+                        <input id="campo-email-2" type="email" name="email"> 
                     </div>
 					<legend class="subtitulo">Datos de su empresa</legend>
 					<div class="campo_formulario"> <label for="campo-nc">Nombre comercial:</label> 
                         <input id="campo-nc" type="text" name="nc"> 
                     </div> 
                     <label for="campo-select">Localización</label>
-					<div class="campo_formulario"> <select id="campo select" name="edad"> 
+					<div class="campo_formulario"> <select id="campo-select" name="localizacion"> 
                     <option value=">18">Euskadi</option>
                     <option value="mayor de 18 >25">España</option>
                     <option value="mayor de 25 y >65">Europa</option>
@@ -67,7 +67,7 @@
 					<p class="subtitulo">Realice su consulta</p> 
                     <textarea name="textarea" rows="15" cols="60"></textarea>
 					<div class="campo_formulario"> <input type="checkbox" name="aceptar" value="1"> Acepto las condiciones
-                        <input type="submit" value="ENVIAR" class="boton"> 
+                        <button type="submit" class="boton"> ENVIAR </button>
                     </div>
 				</form>
 			</div>
@@ -100,7 +100,7 @@
 			</div>
 		</aside>
 
-		</div>
+		</section>
 		<!-- Footer -->
         <footer>
             <p><a href="https://rpk-global.com/es/historia-empresa" target="_blank">RPK Global © 2025 Página Oficial</p></a> 

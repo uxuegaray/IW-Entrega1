@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="css/style.css"> </head>
 <body>
 	<!-- Estructura cabecera-->
-	<div class="navegacion">
+
 		<!-- Navegación entre páginas-->
-		<header>
-			<a class="logo"><img src="images/logo.png" alt="logo" /></a>
+		<header class="navegacion" >
+			<a href="principal.html" class="logo"><img src="images/logo.png" alt="logo" /></a>
 			<nav>
 				<ul>
 					<li><a href="principal.html">INICIO</a></li>
@@ -22,9 +22,8 @@
 				<a href="contacto.html"> <img src="images/contacto.png" alt="contacto"> </a>
 			</div>
 		</header>
-	</div>
 	<!-- Contenido pág. Principal -->
-	<div class="contenido_principal">
+	<section class="contenido_principal">
 	<main>
 		<!-- Primera imagen + texto sobrepuesto -->
 		<div class="imagen_principal"> <img src="images/imagen_principal.png"alt="imagen_presentacion">
@@ -35,19 +34,24 @@
 				</article>
 			</div>
 		</div>
-		<div class="parrafo">
-			<h2 class="titulo"> RPK Group </h2>
-			<p>Nuestra empresa se fundó en Vitoria-Gasteiz en 1974 por 19 personas emprendedoras. Este fue el punto de partida de lo que ahora es un grupo dinámico de 
+		
+			<h2 class="titulo"> Conócenos</h2>
+			<p class = "parrafo">Nuestra empresa se fundó en Vitoria-Gasteiz en 1974 por 19 personas emprendedoras. Este fue el punto de partida de lo que ahora es un grupo dinámico de 
         empresas con presencia global. Nuestra forma organizativa es de cooperativa, basándonos en la colaboración interempresarial, situando a las personas en el centro. </p>
-		</div>
 		<h2 class="subtitulo">
-  RPK Group Historia de la cooperativa y sus valores
-    </h2>
-		<div id="seccion_historia">
+			Nuestro producto
+			</h2>
+			<p class="parrafo"> Todos los productos de RPK Group están hechos a medida para cumplir con todos tus requisitos y maximizar el rendimiento de tus productos. Ponemos a tu disposición todo 
+				el know-how y experiencia de nuestros equipos de ingeniería y personal técnico para ayudarte a lo largo de toda la fase de diseño. Cuenta con nuestros equipos de producción de última 
+				generación para garantizar que obtengas la mejor solución rendimiento-coste.</p> 
+			<h2 class="subtitulo">
+				Historia de la cooperativa y sus valores
+			</h2>
 			<p class="parrafo"> De un grupo de 19 valientes personas emprendedoras en una pequeña oficina en el centro de Vitoria-Gasteiz a un grupo con alcance global, 6 
         ubicaciones en 3 continentes y más de 750 empleados, enfocados y dedicados a crear el producto perfecto para las industrias más exigentes. </p>
-			<p class="parrafo"> Si le interesa conocer más a fondo la historia de esta cooperativa... </p> <video src="videos/RPK_Video.mp4" alt="video_historia" controls muted autoplay>
-    </video>
+			<p class="parrafo"> Si le interesa conocer más a fondo la historia de esta cooperativa... </p> 
+			<video src="videos/RPK_Video.mp4" alt="video_historia" controls muted autoplay>
+    	</video>
 			<!-- Tabla sobre las plantas -->
 			<section class="tabla_sedes">
 				<h2 class="subtitulo">
@@ -110,7 +114,7 @@
 			<a href="https://x.com/RpkCoop" target="_blank"> <img src="images/twitter.png" alt="Twitter"> </a>
 		</div>
     </aside>
-	</div>
+	</section>
 
 	<!-- Footer -->
 	<footer>
